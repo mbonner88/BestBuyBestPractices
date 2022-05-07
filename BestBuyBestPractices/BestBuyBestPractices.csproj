@@ -5,4 +5,17 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="MySql.Data" />
+    <None Remove="Microsoft.Extensions.Configuration.Json" />
+    <None Remove="Dapper" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\netcoreapp3.1\appsettings.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.0.29" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
+    <PackageReference Include="Dapper" Version="2.0.123" />
+  </ItemGroup>
 </Project>
